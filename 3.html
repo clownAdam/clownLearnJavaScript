@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script id="if" type="text/html">
+    if(1==1)
+    {
+    document.write("可以上网");
+    }
+    document.write("haha");
+    var age = 2;
+    if(age > 18)
+    {
+    document.write("可以上网");
+    }else {
+    document.write("不可以上网");
+    }
+    var a = 35;
+    if(a > 40){
+    document.write('老年人');
+    }else if(a >20) {
+    document.write('中年人');
+    }else if (a > 12){
+    document.write('成年人');
+    }else {
+    document.write('未成年爱人');
+    }
+</script>
+<script type="text/javascript">
+    var player, computer;
+    computer = parseInt(Math.random() * 3);
+    // document.write(computer)
+    player = parseInt(+(prompt('请出拳：0->剪刀，1->石头，2->布')));
+    document.write(player);
+    if (player < 0 || player > 2) {
+        player = parseInt(+(prompt('请重新出拳：0->剪刀，1->石头，2->布')));
+    }else{
+        if(player ===0 && computer===2){
+            alert('赢了');
+        }else if(player ===0 && computer===2){
+            alert('输了');
+        }else {
+            alert('平局');
+        }
+    }
+</script>
+
+</body>
+</html>
